@@ -241,10 +241,19 @@ In this exercise we will Configure Update Management for a Virtual Machine.
 
 **Figure 16** Missing updates
 
-**6)** From here, move up to the top menu bar and select “Schedule Update Deployment” and in the new blade that opens enter the name “VM1UD” choosing not to exclude and updates. 
+**6)** From here, move up to the top menu bar and select “Schedule Update Deployment”. In the new blade that opens, enter a name, choose not to exclude updates, configure the deployment to start 20 Minutes after the “Current Time” and leave the Maintenance Window to the default 120 Minutes.
 
-**7)** In “Schedule Settings” configure the deployment to start 20 Minutes after the “Current Time” and leave the Maintenance Window to the default 120 Minutes
+![Schedule updates](https://github.com/towilde/azure-vm-operations/blob/master/images/schedule-updates.png "Schedule updates")
 
+**Figure 17** Schedule updates
+
+**7)**
+
+**8)**
+
+**9)**
+
+**10)**
 
 # Lab 5: Inventry  <a name="inv"></a>
 
