@@ -58,7 +58,7 @@ Contoso have recently migrated several of their on-premise resources to Microsof
 
 At the point of writing, virtual machine operations consist of [Auto-Shutdown](#as), [Backup](#backup), [Disaster Recovery](#dr), [Update Management](#um), [Inventory](#inv) and [Change Tracking](#cr).
 
-![VM Operations](https://github.com/towilde/azure-vm-operations/images/vm-operations.png "VM Operations")
+![VM Operations](https://github.com/towilde/azure-vm-operations/blob/master/images/vm-operations.png "VM Operations")
 
 **Figure 1:** VM Operations
 
@@ -84,7 +84,7 @@ In this lab, we’ll use the auto-shutdown operation to schedule a virtual machi
 
 **3)** Enable the feature, schedule the shutdown time for 5 minutes from now, confirm the correct local time zone is set, click save.
 
-![Auto-Shutdown](https://github.com/towilde/azure-vm-operations/images/auto-shutdown.png "Auto-Shutdown")
+![Auto-Shutdown](https://github.com/towilde/azure-vm-operations/blob/master/images/auto-shutdown.png "Auto-Shutdown")
 
 **Figure 2:** Auto-Shutdown
 
@@ -106,19 +106,19 @@ In this exercise we will enable Azure Backup on a virtual machine.
 
 **3)** Azure Backup requires a recovery vault. Create a new Recovery Services Vault named “vmbackup” and a new Backup Policy accepting the defaults. 
 
-![Create Vault and backup Policy](https://github.com/towilde/azure-vm-operations/images/Create-Vault-backup-Policy.png "Create Vault and backup Policy")
+![Create Vault and backup Policy](https://github.com/towilde/azure-vm-operations/blob/master/images/Create-Vault-backup-Policy.png "Create Vault and backup Policy")
 
 **Figure 3:** Create Vault and backup Policy
 
 **4)** After a few minutes the configuration will be complete, and we’ll be able to test. To achieve this, head back into the VM blade and once again select “Backup” under Operations. From this window select “Backup Now” accepting the default retention before pressing the “OK” Button. 
 
-![Backup now](https://github.com/towilde/azure-vm-operations/images/Backup-now.png "Backup now")
+![Backup now](https://github.com/towilde/azure-vm-operations/blob/master/images/Backup-now.png "Backup now")
 
 **Figure 4:** Backup now
 
 **5)** From “Notifications” Select the “Triggering backup for the VM" notification to open up the Backup Jobs. Notice that the Backup of VM is in progress. 
 
-![Backup in progress](https://github.com/towilde/azure-vm-operations/images/Backup-in-progress.png "Backup in progress")
+![Backup in progress](https://github.com/towilde/azure-vm-operations/blob/master/images/Backup-in-progress.png "Backup in progress")
 
 **Figure 5:** Backup in progress
 
@@ -134,19 +134,19 @@ In this exercise we’ll restore a Virtual Machine from the Azure Backup.
 
 **3)** In the top Menu select “Restore VM” and in the new blade that opens, select a restore poinrt and the “OK” button.
 
-![Restore VM](https://github.com/towilde/azure-vm-operations/images/Restore-VM.png "Restore VM")
+![Restore VM](https://github.com/towilde/azure-vm-operations/blob/master/images/Restore-VM.png "Restore VM")
 
 **Figure 6:** Restore VM
 
 **4)** In the “Restore Configuration” pane we can select our “Restore Type” From here we can either choose to “Create a New Virtual Machine” or “Restore Disks” to a staging location. For this exercise we will choose to “Create a New Virtual Machine” with a name of “VM2Restore”. 
 
-![Restore Configuration](https://github.com/towilde/azure-vm-operations/images/Restore-configuration.png "Restore Configuration")
+![Restore Configuration](https://github.com/towilde/azure-vm-operations/blob/master/images/Restore-configuration.png "Restore Configuration")
 
 **Figure 7:** Restore Configuration
 
 **5)** Click on the job Notification to launch the Backup Jobs window and Monitor Progress. 
 
-![Restore Progress](https://github.com/towilde/azure-vm-operations/images/Restore-Progress.png "Restore Progress")
+![Restore Progress](https://github.com/towilde/azure-vm-operations/blob/master/images/Restore-Progress.png "Restore Progress")
 
 **Figure 8:** Restore Progress
 
@@ -154,7 +154,7 @@ Note: This normally takes around 30 minutes to complete for an average size VM.
 
 **6)** Once complete, navigate to “Virtual Machines” from the left-hand side of the Azure portal. Notice that we now have a new VM present titled “VM2Restore” 
 
-![VM Restored](https://github.com/towilde/azure-vm-operations/images/VM-Restored.png "VM Restored")
+![VM Restored](https://github.com/towilde/azure-vm-operations/blob/master/images/VM-Restored.png "VM Restored")
 
 **Figure 9:** VM Restored
 
@@ -170,7 +170,7 @@ Azure Site Recovery helps ensure business continuity by keeping business apps an
 
 **2)** Under OPERATIONS click Disaster Recovery, this will open the Disaster Recovery Configuration Pane. Notice the default Disaster Recovery Settings, including target Resource Group, Network, Disk and Replication pairs. When Ready click on the “Enable Replication” Button.
 
-![Configure DR](https://github.com/towilde/azure-vm-operations/images/Configure-DR.png "Configure DR")
+![Configure DR](https://github.com/towilde/azure-vm-operations/blob/master/images/Configure-DR.png "Configure DR")
 
 **Figure 10:** Configure DR
 
@@ -180,7 +180,7 @@ Azure Site Recovery helps ensure business continuity by keeping business apps an
 
 **2)** Under OPERATIONS click Disaster Recovery. Notice in the new blade that opens, you’re able to both Failover and Test Failover
 
-![Failover Options](https://github.com/towilde/azure-vm-operations/images/test-failover-dr.png "Failover options")
+![Failover Options](https://github.com/towilde/azure-vm-operations/blob/master/images/test-failover-dr.png "Failover options")
 
 **Figure 11:** VM Restored
 
@@ -190,13 +190,13 @@ Azure Site Recovery helps ensure business continuity by keeping business apps an
 
 **5)**  Click the “OK” Button to begin test failover
 
-![Create failover test](https://github.com/towilde/azure-vm-operations/images/run-test-failover.png "Create failover test")
+![Create failover test](https://github.com/towilde/azure-vm-operations/blob/master/images/run-test-failover.png "Create failover test")
 
 **Figure 12:** Create failover test
 
 **6)** When Test Failover Completes, click on the notification to open the job summary. Notice the stages the failover went through, in creating a test VM.
 
-![Failover test stages](https://github.com/towilde/azure-vm-operations/images/failover-test-details.png "Failover test stages")
+![Failover test stages](https://github.com/towilde/azure-vm-operations/blob/master/images/failover-test-details.png "Failover test stages")
 
 **Figure 13:** Failover test stages
 
@@ -204,7 +204,7 @@ Azure Site Recovery helps ensure business continuity by keeping business apps an
 
 **8)** From here type test completed in the Notes dialogue box and select to delete the test failover virtual machine(s) before pressing the “OK” button.
 
-![Failover test cleanup](https://github.com/towilde/azure-vm-operations/images/dr-failover-test-cleanup.png "Failover test cleanup")
+![Failover test cleanup](https://github.com/towilde/azure-vm-operations/blob/master/images/dr-failover-test-cleanup.png "Failover test cleanup")
 
 **Figure 14:** Failover test cleanup
 
@@ -227,7 +227,7 @@ In this exercise we will Configure Update Management for a Virtual Machine.
 
 **3)** From the Update Management the blade that opens accept the defaults for the Log Analytics Workspace and Automation Account before pressing the “Enable” button. 
 
-![Configure Update Management](https://github.com/towilde/azure-vm-operations/images/enable-update-management.png "Configure Update Management")
+![Configure Update Management](https://github.com/towilde/azure-vm-operations/blob/master/images/enable-update-management.png "Configure Update Management")
 
 **Figure 15** Configure Update Management
 
@@ -237,7 +237,7 @@ In this exercise we will Configure Update Management for a Virtual Machine.
 
 **5)** Once complete you will notice that the “Update Management” blade lists many “Missing Updates” including links to the associated Knowledgebase Articles. 
 
-![Missing updates](https://github.com/towilde/azure-vm-operations/images/update-manager-missing-updates.png "Missing updates")
+![Missing updates](https://github.com/towilde/azure-vm-operations/blob/master/images/update-manager-missing-updates.png "Missing updates")
 
 **Figure 16** Missing updates
 
