@@ -36,9 +36,9 @@ Dan Baker - Microsoft
 
 **[Lab 5.1: Confugure Inventry Management](#cim)**
 
-**[Lab 6: Change Tracking](#cr)**
+**[Lab 6: Change Tracking](#ct)**
 
-**[Decommission the lab](#decommission)**
+**[Lab 6.1: View Change Tracking](#vct)**
 
 **[Conclusion](#conclusion)**
 
@@ -241,28 +241,69 @@ In this exercise we will Configure Update Management for a Virtual Machine.
 
 **Figure 16** Missing updates
 
-**6)** From here, move up to the top menu bar and select “Schedule Update Deployment”. In the new blade that opens, enter a name, choose not to exclude updates, configure the deployment to start 20 Minutes after the “Current Time” and leave the Maintenance Window to the default 120 Minutes.
+**6)** From here, move up to the top menu bar and select “Schedule Update Deployment”. In the new blade that opens, enter a name, choose not to exclude updates, configure the deployment to start 20 Minutes after the “Current Time” and leave the Maintenance Window to the default 120 Minutes. Once configured, press “OK” followed by “Create” to continue.
 
 ![Schedule updates](https://github.com/towilde/azure-vm-operations/blob/master/images/schedule-updates.png "Schedule updates")
 
 **Figure 17** Schedule updates
 
-**7)**
+**7)** Back into the Update Management blade, notice under “Scheduled Update Deployments” how the schedule is now listed.
 
-**8)**
+![Scheduled updates](https://github.com/towilde/azure-vm-operations/blob/master/images/scheduled-updates.png "Scheduled updates")
 
-**9)**
+**Figure 18** Scheduled updates
 
-**10)**
+**8)** After 20 minutes, click onto the “Update Deployments” tab to see the scheduled maintenance window open (Remember you have a 2 hour window)
+
+![Scheduled updates in progress](https://github.com/towilde/azure-vm-operations/blob/master/images/scheduled-updatesip.png "Scheduled updates in progress")
+
+**Figure 19** Scheduled updates in progress
 
 # Lab 5: Inventry  <a name="inv"></a>
 
+Get inventory of in-guest resources for visibility into installed applications as well as custom-defined configuration items. Azure Inventory allows rich reporting and search capability to help you quickly find detailed information and understand everything that is configured within your hybrid environment.
+
 # Lab 5.1: Configure Inventry Management  <a name="cim"></a>
+
+In this exercise we will Configure Inventory Management.
+
+**1)** In the Azure portal, go to your VM.
+
+**2)** Under OPERATIONS click Inventry
+
+**3)** From the Inventry blade enable the service by clicking on the “Enable” button. 
+
+![Enable Inventry](https://github.com/towilde/azure-vm-operations/blob/master/images/enable-inventry.png "Enable Inventry")
+
+**Figure 18** Enable Inventry
+
+Note: This can take up to 15 minutes
+
+**4)** Once Provisioned, it will already be configured to collect data on the virtual machine. To enable data collection on other machines, select “Manage Multiple Machines” at the top of the blade and then “Add Azure VM” or “Add Non-Azure Machine” for cross cloud or on premises solutions.  
+
+Note: Due to the collection time, the results may not be visible for about up to 60 minutes.
+
+**5)** When configured, you will notice that the blade lists the VMs' software, Files, Registry and Services. 
+
+![VM Inventry](https://github.com/towilde/azure-vm-operations/blob/master/images/vm-inventry.png "VM Inventry")
+
+**Figure 19** VM Inventry
 
 # Lab 6: Change Tracking  <a name="ct"></a>
 
+In this exercise we will view Change Management which allows you to track changes across services, daemons, software, registry, and files.
 
+Note: This will only be visible once the Update Management Lab has completed and may have to be set as further study. 
 
+# Lab 6.1: View Change Tracking  <a name="vct"></a>
+
+**1)** In the Azure portal, go to your VM.
+
+**2)** Under OPERATIONS click Change Tracking to see the results of our earlier lab. 
+
+![Change Tracking](https://github.com/towilde/azure-vm-operations/blob/master/images/vm-inventry.png "Change Tracking")
+
+**Figure 19** Change Tracking
 
 # Conclusion <a name="conclusion"></a>
 
