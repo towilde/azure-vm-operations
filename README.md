@@ -112,13 +112,13 @@ In this exercise we will enable Azure Backup on a virtual machine.
 
 **4)** After a few minutes the configuration will be complete, and we’ll be able to test. To achieve this, head back into the VM blade and once again select “Backup” under Operations. From this window select “Backup Now” accepting the default retention before pressing the “OK” Button. 
 
-![Backup now](https://github.com/towilde/azure-vm-operations/blob/master/images/Backup-now.png "Backup now")
+![Backup now](https://github.com/towilde/azure-vm-operations/blob/master/images/backup-now.png "Backup now")
 
 **Figure 4:** Backup now
 
 **5)** From “Notifications” Select the “Triggering backup for the VM" notification to open up the Backup Jobs. Notice that the Backup of VM is in progress. 
 
-![Backup in progress](https://github.com/towilde/azure-vm-operations/blob/master/images/Backup-in-progress.png "Backup in progress")
+![Backup in progress](https://github.com/towilde/azure-vm-operations/blob/master/images/backup-in-progress.png "Backup in progress")
 
 **Figure 5:** Backup in progress
 
@@ -134,19 +134,19 @@ In this exercise we’ll restore a Virtual Machine from the Azure Backup.
 
 **3)** In the top Menu select “Restore VM” and in the new blade that opens, select a restore poinrt and the “OK” button.
 
-![Restore VM](https://github.com/towilde/azure-vm-operations/blob/master/images/Restore-VM.png "Restore VM")
+![Restore VM](https://github.com/towilde/azure-vm-operations/blob/master/images/restore-vm.png "Restore VM")
 
 **Figure 6:** Restore VM
 
 **4)** In the “Restore Configuration” pane we can select our “Restore Type” From here we can either choose to “Create a New Virtual Machine” or “Restore Disks” to a staging location. For this exercise we will choose to “Create a New Virtual Machine” with a name of “VM2Restore”. 
 
-![Restore Configuration](https://github.com/towilde/azure-vm-operations/blob/master/images/Restore-configuration.png "Restore Configuration")
+![Restore Configuration](https://github.com/towilde/azure-vm-operations/blob/master/images/restore-configuration.png "Restore Configuration")
 
 **Figure 7:** Restore Configuration
 
 **5)** Click on the job Notification to launch the Backup Jobs window and Monitor Progress. 
 
-![Restore Progress](https://github.com/towilde/azure-vm-operations/blob/master/images/Restore-Progress.png "Restore Progress")
+![Restore Progress](https://github.com/towilde/azure-vm-operations/blob/master/images/restore-Progress.png "Restore Progress")
 
 **Figure 8:** Restore Progress
 
@@ -154,7 +154,7 @@ Note: This normally takes around 30 minutes to complete for an average size VM.
 
 **6)** Once complete, navigate to “Virtual Machines” from the left-hand side of the Azure portal. Notice that we now have a new VM present titled “VM2Restore” 
 
-![VM Restored](https://github.com/towilde/azure-vm-operations/blob/master/images/VM-Restored.png "VM Restored")
+![VM Restored](https://github.com/towilde/azure-vm-operations/blob/master/images/vm-restored.png "VM Restored")
 
 **Figure 9:** VM Restored
 
@@ -170,7 +170,7 @@ Azure Site Recovery helps ensure business continuity by keeping business apps an
 
 **2)** Under OPERATIONS click Disaster Recovery, this will open the Disaster Recovery Configuration Pane. Notice the default Disaster Recovery Settings, including target Resource Group, Network, Disk and Replication pairs. When Ready click on the “Enable Replication” Button.
 
-![Configure DR](https://github.com/towilde/azure-vm-operations/blob/master/images/Configure-DR.png "Configure DR")
+![Configure DR](https://github.com/towilde/azure-vm-operations/blob/master/images/configure-dr.png "Configure DR")
 
 **Figure 10:** Configure DR
 
