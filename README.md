@@ -14,7 +14,7 @@ Dan Baker - Microsoft
 
 **[Lab 1: Auto-shutdown](#as)**
 
-**[Lab 1.1: Confgure Auto-shutdown](#cas)**
+**[Lab 1.1: Configure Auto-shutdown](#cas)**
 
 **[Lab 2: Backup](#backup)**
 
@@ -30,11 +30,11 @@ Dan Baker - Microsoft
 
 **[Lab 4: Update Management](#um)**
 
-**[Lab 4.1: Confugure Update Management](#cum)**
+**[Lab 4.1: Configure Update Management](#cum)**
 
-**[Lab 5: Inventry](#inv)**
+**[Lab 5: Inventory](#inv)**
 
-**[Lab 5.1: Confugure Inventry Management](#cim)**
+**[Lab 5.1: Configure Inventory Management](#cim)**
 
 **[Lab 6: Change Tracking](#ct)**
 
@@ -132,7 +132,7 @@ In this exercise we’ll restore a Virtual Machine from the Azure Backup.
 
 **2)** Under OPERATIONS click Backup
 
-**3)** In the top Menu select “Restore VM” and in the new blade that opens, select a restore poinrt and the “OK” button.
+**3)** In the top Menu select “Restore VM” and in the new blade that opens, select a restore point and the “OK” button.
 
 ![Restore VM](https://github.com/towilde/azure-vm-operations/blob/master/images/restore-vm.png "Restore VM")
 
@@ -204,9 +204,9 @@ Azure Site Recovery helps ensure business continuity by keeping business apps an
 
 **8)** From here type test completed in the Notes dialogue box and select to delete the test failover virtual machine(s) before pressing the “OK” button.
 
-![Failover test cleanup](https://github.com/towilde/azure-vm-operations/blob/master/images/dr-failover-test-cleanup.png "Failover test cleanup")
+![Failover test clean-up](https://github.com/towilde/azure-vm-operations/blob/master/images/dr-failover-test-cleanup.png "Failover test clean-up")
 
-**Figure 14:** Failover test cleanup
+**Figure 14:** Failover test clean-up
 
 # Lab 4: Update Management  <a name="um"></a>
 
@@ -259,23 +259,23 @@ In this exercise we will Configure Update Management for a Virtual Machine.
 
 **Figure 19** Scheduled updates in progress
 
-# Lab 5: Inventry  <a name="inv"></a>
+# Lab 5: Inventory  <a name="inv"></a>
 
 Get inventory of in-guest resources for visibility into installed applications as well as custom-defined configuration items. Azure Inventory allows rich reporting and search capability to help you quickly find detailed information and understand everything that is configured within your hybrid environment.
 
-# Lab 5.1: Configure Inventry Management  <a name="cim"></a>
+# Lab 5.1: Configure inventory Management  <a name="cim"></a>
 
 In this exercise we will Configure Inventory Management.
 
 **1)** In the Azure portal, go to your VM.
 
-**2)** Under OPERATIONS click Inventry
+**2)** Under OPERATIONS click inventory
 
-**3)** From the Inventry blade enable the service by clicking on the “Enable” button. 
+**3)** From the inventory blade enable the service by clicking on the “Enable” button. 
 
-![Enable Inventry](https://github.com/towilde/azure-vm-operations/blob/master/images/enable-inventry.png "Enable Inventry")
+![Enable inventory](https://github.com/towilde/azure-vm-operations/blob/master/images/enable-inventry.png "Enable inventory")
 
-**Figure 18** Enable Inventry
+**Figure 18** Enable inventory
 
 Note: This can take up to 15 minutes
 
@@ -285,9 +285,9 @@ Note: Due to the collection time, the results may not be visible for about up to
 
 **5)** When configured, you will notice that the blade lists the VMs' software, Files, Registry and Services. 
 
-![VM Inventry](https://github.com/towilde/azure-vm-operations/blob/master/images/vm-inventry.png "VM Inventry")
+![VM inventory](https://github.com/towilde/azure-vm-operations/blob/master/images/vm-inventry.png "VM inventory")
 
-**Figure 19** VM Inventry
+**Figure 19** VM inventory
 
 # Lab 6: Change Tracking  <a name="ct"></a>
 
@@ -324,7 +324,7 @@ https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-overview
 - **Azure Update Management**
 https://docs.microsoft.com/en-us/azure/automation/automation-update-management
 
-- **Azure Inventry**
+- **Azure inventory**
 https://docs.microsoft.com/en-us/azure/automation/automation-vm-inventory
 
 - **Azure Change Tracking**
